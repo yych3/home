@@ -15,10 +15,26 @@
 <br/>
 <h1>永 远 网 络</h1>
 <hr/>
+
 <br/>
 <hr/>
 <br/>
+<p id="hitokoto">
+  <a id="hitokoto_text">获取中...</a>
+</p>
 </div>
 </div>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('get', 'https://v1.hitokoto.cn');
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    const data = JSON.parse(xhr.responseText);
+    const hitokoto = document.querySelector('#hitokoto_text');
+    hitokoto.innerText = data.hitokoto;
+  }
+}
+xhr.send();
+</script>
 </body>
 </html>
