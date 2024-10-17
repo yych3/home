@@ -1,0 +1,12 @@
+按键说明：
+移动端使用触摸操控，PC端按键映射如下：
+
+按键	player1	  player2
+Up	W   	↑
+Down	S  	↓
+Left	A  	←
+Right	D  	→
+B	J	Num1
+A	K	Num2
+Select	Space	Num/
+Start	Enter	Num*

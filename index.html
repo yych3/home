@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>永远网络</title>
+<meta name="keywords" content="彩虹引擎官网，彩虹引擎论坛，彩虹引擎说明书" />
+<meta name="description" content="怒发冲冠，凭阑处、潇潇雨歇。抬望眼，仰天长啸，壮怀激烈。三十功名尘与土，八千里路云和月。莫等闲、白了少年头，空悲切。靖康耻，犹未雪。臣子恨，何时灭。驾长车，踏破贺兰山缺。壮志饥餐胡虏肉，笑谈渴饮匈奴血。待从头、收拾旧山河，朝天阙。" />
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+<canvas id="bubbles"></canvas>
+
+<div class="main">
+		<div class="main1" style="text-align:center">
+		<br/>
+		<h1>永 远 网 络</h1>   
+	    </div>
+		<br/>
+<div style="text-align:center">
+<span style="font-size:14px">登录后才可发表评论，注册不要使用QQ、微博，点这里 <a href="https://graceful-froyo-b19d59.netlify.app/.netlify/functions/comment/ui/register" target=”_blank”><b>注册账号</b></a>。</span><br/>
+  <div id="waline" ></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://graceful-froyo-b19d59.netlify.app/.netlify/functions/comment',
+	  imageUploader: false,
+	  copyright: false,
+	  search: false,
+	  login: 'force',
+	  meta: ['nick'],
+	  requiredMeta: ['nick'],
+	  turnstileKey: '0x4AAAAAAAxrBgKx-p8dT9um',
+    });
+  </script>
+  </div>
+</div>
+
+  <script src="js/body.js"></script>
+
+</body>
+
+</html>
